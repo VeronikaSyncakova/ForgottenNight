@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Veronika Syncakova">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="imgs/icon-192-192.png" type="image/x-icon" />
+    <meta name="theme-color" content="white"/>
+    <title>Forgotten night</title>
+    <link href="assets/css/screen.css" rel="stylesheet" text="text/css">
+</head>
+<body id="body">
+
+    <form name="helloForm" method="get" onsubmit="validateForm()">
+        Name <br><input type="text" name="name">
+        <br>Use current date<br>
+        <input type="radio" id="yes" name="date" value="yes">
+        <label for="yes">yes</label>
+        <input type="radio" id="no" name="date" value="no">
+        <label for="no">no</label><br><br>
+        <input type="submit" value="Submit"><br>
+        <p>A,D for movement<br>Right arrow to punch<br>Left arrow to block<br>Up arrow to kick<br>Down arrow to claim shot<br>Click to change screens</p>
+    </form>
+    
+    <div id="modal">
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <code class="present-saved-data"></code>
+          <p></p>
+          <button class="saved-data-accept">I want to remember more</button><button class="saved-data-refusal">Start fresh</button>
+        </div>
+  
+    </div> 
+
+    <section class="wrapper">
+        <canvas id="the_canvas" width="1000" height="500">
+            Oops! looks like your browser does not support canvas tag
+        </canvas>
+    </section>
+
+
+<script type="text/javascript" src="assets/js/globals.js"></script>  
+<script type="text/javascript" src="assets/js/enemy.js"></script>
+<script type="text/javascript" src="assets/js/player.js"></script>
+<script type="text/javascript" src="assets/js/intro.js"></script>
+<script type="text/javascript" src="assets/js/game.js"></script>
+<script type="text/javascript" src="assets/js/endScreen.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/form.js"></script>
+
+</body>
+</html>
